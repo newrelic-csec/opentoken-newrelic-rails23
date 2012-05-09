@@ -14,7 +14,8 @@ Gem::Specification.new do |s|
 
   s.rubyforge_project = "opentoken"
 
-  s.add_runtime_dependency(%q<activesupport>, [">= 3.0.3"])
+  # If you are on a newer version of Rails, you should be using the opentoken gem, not our fork.
+  s.add_runtime_dependency(%q<activesupport>, ["~> 2.3.14"])
   s.add_runtime_dependency(%q<i18n>, [">= 0"])
   s.add_development_dependency(%q<shoulda>, ["2.11.3"])
   s.add_development_dependency(%q<timecop>, ["0.3.5"])

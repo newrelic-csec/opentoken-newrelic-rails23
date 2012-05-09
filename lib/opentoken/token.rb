@@ -1,11 +1,10 @@
 require 'time'
-require 'active_support/hash_with_indifferent_access'
-require 'active_support/core_ext/time/calculations'
+require 'active_support'
 
 module OpenToken
   class TokenExpiredError < StandardError;  end
 
-  class Token < ActiveSupport::HashWithIndifferentAccess
+  class Token < HashWithIndifferentAccess
     def validate!
       raise OpenToken::TokenExpiredError.new("#{Time.now.utc} is not within token duration: #{self.start_at} - #{self.end_at}") if self.expired?
     end
