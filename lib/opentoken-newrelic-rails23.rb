@@ -5,10 +5,10 @@ require 'zlib'
 require 'stringio'
 require 'cgi'
 require 'time'
-require File.join(File.dirname(__FILE__), 'opentoken', 'token')
-require File.join(File.dirname(__FILE__), 'opentoken', 'key_value_serializer')
-require File.join(File.dirname(__FILE__), 'opentoken', 'password_key_generator')
-require File.join(File.dirname(__FILE__), 'opentoken', 'cipher')
+require File.join(File.dirname(__FILE__), 'opentoken-newrelic-rails23', 'token')
+require File.join(File.dirname(__FILE__), 'opentoken-newrelic-rails23', 'key_value_serializer')
+require File.join(File.dirname(__FILE__), 'opentoken-newrelic-rails23', 'password_key_generator')
+require File.join(File.dirname(__FILE__), 'opentoken-newrelic-rails23', 'cipher')
 
 module OpenToken
   class TokenInvalidError < StandardError;  end

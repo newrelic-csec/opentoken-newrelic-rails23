@@ -13,7 +13,7 @@ require 'timecop'
 
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
-require 'opentoken'
+require 'opentoken-newrelic-rails23'
 
 class Test::Unit::TestCase
 end
