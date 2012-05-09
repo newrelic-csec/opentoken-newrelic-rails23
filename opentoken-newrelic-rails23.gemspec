@@ -3,13 +3,13 @@ $:.push File.expand_path("../lib", __FILE__)
 require "opentoken/version"
 
 Gem::Specification.new do |s|
-  s.name        = "opentoken"
+  s.name        = "opentoken-newrelic-rails23"
   s.version     = OpenToken::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Ryan Sonnek"]
   s.email       = ["ryan@socialcast.com"]
-  s.homepage    = "http://github.com/socialcast/opentoken"
-  s.summary     = %q{ruby implementation of the opentoken specification}
+  s.homepage    = "http://github.com/newrelic/opentoken-newrelic-rails23"
+  s.summary     = %q{ruby implementation of the opentoken specification, forked for Rails 2.3 compatibility. Use the non-forked version for Rails 3+}
   s.description = %q{parse opentoken properties passed for Single Signon requests}
 
   s.rubyforge_project = "opentoken"
